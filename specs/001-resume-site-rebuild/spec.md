@@ -101,25 +101,31 @@ and confirm a PDF file saves locally; repeat both on a mobile browser.
 ### Functional Requirements
 
 - **FR-001**: System MUST present the following content sections, in order: About Me,
-  Professional Biography, Experience, Education, Project Portfolio, Skills, Certifications, and
-  Contact.
+  Professional Biography, Experience, Education, Project Portfolio, Skills, Certifications,
+  Honors & Awards, and Contact.
 - **FR-002**: System MUST include, in the About Me section, a short introduction paired with
   Freddy's headshot photo.
 - **FR-003**: System MUST include, in the Professional Biography section, a longer-form bio
   paired with a photo of Freddy teaching.
 - **FR-004**: System MUST list, in the Experience section, at minimum: Verisk (Business Analyst
-  Intern, Summer 2026), Lightbridge Academy (ML/GenAI Consulting), Fair Lawn Public School
+  Intern, June – August 2026), Lightbridge Academy (ML/GenAI Consulting), Fair Lawn Public School
   (history teaching), and Montville Parks and Rec, each with a description of the role and its
   outcomes.
 - **FR-005**: System MUST list, in the Education section, Stevens Institute of Technology (M.S.
-  Business Analytics and AI, expected Dec. 2026) and The College of New Jersey (B.A. History and
-  Secondary Education, Summa Cum Laude, Dec. 2023).
+  Business Analytics and AI, expected Dec. 2026, with GPA and honor-society/club affiliation per
+  resume-website-project-spec-v3.md) and The College of New Jersey (B.A. History and Secondary
+  Education, Summa Cum Laude, Dec. 2023, with GPA and honor-society affiliations per
+  resume-website-project-spec-v3.md). No high-school or student-teaching-era entries are included.
 - **FR-006**: System MUST list, in the Project Portfolio section, at minimum: Jira
-  Story-Generation Agent, Staff Scheduling Optimizer, Note-Organizing MCP Agent, and Insurance
-  Risk Advisor Agent, each with a description of what it does.
-- **FR-007**: System MUST list, in the Skills section, at minimum: SQL Server, Scrum, Snowflake,
-  Power BI, Tableau, BI Analysis, Python, Excel, Staff Training, Business Analytics, Team
-  Management, and OpenAI API.
+  Story-Generation Agent, Staff Scheduling Optimizer, Note-Organizing MCP Agent, Insurance Risk
+  Advisor, and Twentieth Century Women Across Cultures, each with a description of what it does.
+  Insurance Risk Advisor MUST be described as an LLM-assisted workflow that presents a
+  recommendation for a human to act on, not as an autonomous agent that itself approves or denies
+  anything.
+- **FR-007**: System MUST list, in the Skills section, at minimum the expanded skill set defined
+  in resume-website-project-spec-v3.md, including SQL Server, Scrum, Snowflake, Power BI, Tableau,
+  BI Analysis, Python, Excel, Staff Training, Business Analytics, Team Management, OpenAI API,
+  Spec-Driven Development (SDD), and LangGraph.
 - **FR-008**: System MUST provide a way for a visitor to navigate directly to each content section
   from anywhere on the page.
 - **FR-009**: System MUST provide a contact form capturing at minimum a visitor's name, email, and
@@ -145,12 +151,19 @@ and confirm a PDF file saves locally; repeat both on a mobile browser.
   view/download).
 - **FR-018**: System MUST load quickly, using static assets and minimal script, with no
   perceptible delay attributable to unnecessary script weight.
-- **FR-019**: Certifications section content is not yet available. System MUST launch with the
-  Certifications section omitted from the page entirely until Freddy supplies the list; the
-  section MUST be trivial to add back in once content exists, and no placeholder or invented
-  certifications may be shown in the meantime.
+- **FR-019**: **Resolved** — Certifications content is now available (see
+  resume-website-project-spec-v3.md). System MUST include the Certifications section at launch,
+  organized into the four thematic clusters plus one "Other" entry defined there, with full
+  course/credential titles retained (not condensed or paraphrased).
 - **FR-020**: System MUST use a single scrolling page with anchor-link navigation between
   sections (not separate pages per section).
+- **FR-021**: System MUST include an Honors & Awards section listing the four honors/awards
+  defined in resume-website-project-spec-v3.md (History Department Outstanding Student Teacher
+  Award, Provost Master's Scholarship, TCNJ Honors Program Scholarship, and Dean's List for all 7
+  semesters), each attributed to its institution. High-school-era awards are explicitly excluded.
+- **FR-022**: System MUST include, in the Contact section, direct links to Freddy's GitHub
+  profile (github.com/FBlake28), LinkedIn profile (linkedin.com/in/fblake28), and email address
+  (frederick.blake20@gmail.com), alongside the contact form.
 
 ### Key Entities
 
@@ -163,6 +176,11 @@ and confirm a PDF file saves locally; repeat both on a mobile browser.
 - **Contact Submission**: A visitor-provided name, email, and message sent via the contact form to
   Freddy's inbox through Formspree; not stored by the site itself.
 - **Resume Document**: The single current PDF resume file, viewable in-page and downloadable.
+- **Certification Entry**: A course/credential title grouped into one of four thematic clusters
+  (or the "Other" cluster), per resume-website-project-spec-v3.md. Titles are shown in full, not
+  condensed.
+- **Honors & Award Entry**: A title and the awarding institution, limited to the four
+  post-secondary items defined in resume-website-project-spec-v3.md.
 
 ## Success Criteria *(mandatory)*
 
@@ -199,8 +217,11 @@ and confirm a PDF file saves locally; repeat both on a mobile browser.
   staging environment in scope.
 - Existing repo assets not explicitly reused (old Pinegrow backups, unused images, `desktop.ini`,
   etc.) are removed as part of this feature's "replace entirely" requirement (FR-015).
-- The Certifications section is deferred (FR-019) rather than blocking the rest of the feature,
-  since its content is a content-gathering task for Freddy, not a design or scope decision.
 - Navigation defaults to a single-page anchor-link structure (FR-020), consistent with the prior
   site's pattern, rather than a multi-page structure — this is reversible later without changing
   the feature's scope.
+- **resume-website-project-spec-v3.md** supersedes v2 as the source project spec (v2 has been
+  removed). Certifications (FR-019) is no longer deferred — real content was supplied and
+  reviewed by Freddy directly, resolving the prior content-gathering gap. Honors & Awards (FR-021)
+  is new scope added in this revision, deliberately excluding high-school-era items per Freddy's
+  explicit confirmation.
