@@ -197,6 +197,25 @@ resume-website-project-spec-v3.md — still independently testable, still ahead 
 
 ---
 
+## Phase 3C: Project Portfolio GitHub Links
+
+- [X] T048 [US1] Rename "Note-Organizing MCP Agent" to "Obsidian MCP Agent" in `index.html`
+      #projects and rewrite its description from Freddy's actual repo README content; link it to
+      `github.com/FBlake28/obsidian-mcp-agent` (FR-006, FR-023)
+- [X] T049 [US1] Link the existing "Insurance Risk Advisor" entry to
+      `github.com/FBlake28/motor-insurance-prediction` in `index.html` #projects (FR-023)
+- [X] T050 [US1] Add a new "Analyzing CVM Claims Data to Answer Various KBQ" entry to `index.html`
+      #projects, described from the repo's own README, linked to
+      `github.com/FBlake28/Analyzing-CVM-Claims-Data-to-Answer-various-KBQ` (FR-006, FR-023)
+- [X] T051 [US1] Add a new "Professional Resume Website" entry (this site) to `index.html`
+      #projects, linked to `github.com/FBlake28/Professional-Website` (FR-006, FR-023)
+- [X] T052 [US1] Style `.entry__link` in `css/styles.css` and verify all four links in-browser via
+      Claude in Chrome (correct hrefs; entries with no public repo — Jira Story-Generation Agent,
+      Staff Scheduling Optimizer, Twentieth Century Women Across Cultures — correctly show no
+      link)
+
+---
+
 ## Phase 4: User Story 2 - Contact Freddy (Priority: P2)
 
 **Goal**: A visitor can submit the contact form and have it delivered to Freddy's inbox via

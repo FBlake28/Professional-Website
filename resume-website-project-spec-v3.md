@@ -150,16 +150,31 @@ backend to maintain, while still practicing the "connect to an external service"
 
 **Corrected/expanded Project Portfolio content:**
 
-- **Jira Story-Generation Agent** (Verisk) — unchanged.
-- **Staff Scheduling Optimizer** (Lightbridge Academy) — unchanged.
-- **Note-Organizing MCP Agent** — unchanged.
+- **Jira Story-Generation Agent** (Verisk) — unchanged; no public repo (proprietary employer
+  work), no GitHub link.
+- **Staff Scheduling Optimizer** (Lightbridge Academy) — unchanged; no public repo, no GitHub
+  link.
+- **Obsidian MCP Agent** *(renamed from "Note-Organizing MCP Agent")* — a custom Python MCP
+  server that turns rough, train-of-thought notes into properly formatted, cross-linked notes in
+  an Obsidian vault via Claude Desktop, with no coding required at use-time; tags only with
+  existing vault tags, verifies candidate notes before wikilinking them, and never silently
+  overwrites an existing note. Linked to `github.com/FBlake28/obsidian-mcp-agent`.
 - **Insurance Risk Advisor** *(renamed from "Insurance Risk Advisor Agent")* — an LLM-assisted
   workflow, not an autonomous agent: a user describes a driver in natural language, the LLM calls
   a trained ML model (Random Forest or Multiple Linear Regression), the model returns a predicted
   claim likelihood and premium, and the LLM presents a recommendation for a human to act on. It
-  does not itself approve or deny anything.
-- **Twentieth Century Women Across Cultures** *(new — published academic work)* — research
-  published in *Teaching Social Studies*, Vol. 23, No. 2, pp. 123–129.
+  does not itself approve or deny anything. Linked to
+  `github.com/FBlake28/motor-insurance-prediction`.
+- **Analyzing CVM Claims Data to Answer Various KBQ** *(new)* — cleaned, merged, and visualized
+  synthetic Syntegra claims data for BIA 810 (Healthcare Analytics) at Stevens, surfacing insights
+  for Sales & Marketing teams researching CVM disease-related claims; extended a provided rough
+  code outline with additional key business questions developed independently. Linked to
+  `github.com/FBlake28/Analyzing-CVM-Claims-Data-to-Answer-various-KBQ`.
+- **Twentieth Century Women Across Cultures** *(published academic work)* — research
+  published in *Teaching Social Studies*, Vol. 23, No. 2, pp. 123–129. A publication, not code —
+  no GitHub link.
+- **Professional Resume Website** *(new)* — this site itself, built as hands-on SDD practice.
+  Linked to `github.com/FBlake28/Professional-Website`.
 
 **Skills (expanded):**
 

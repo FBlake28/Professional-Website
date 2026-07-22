@@ -117,11 +117,17 @@ and confirm a PDF file saves locally; repeat both on a mobile browser.
   Education, Summa Cum Laude, Dec. 2023, with GPA and honor-society affiliations per
   resume-website-project-spec-v3.md). No high-school or student-teaching-era entries are included.
 - **FR-006**: System MUST list, in the Project Portfolio section, at minimum: Jira
-  Story-Generation Agent, Staff Scheduling Optimizer, Note-Organizing MCP Agent, Insurance Risk
-  Advisor, and Twentieth Century Women Across Cultures, each with a description of what it does.
-  Insurance Risk Advisor MUST be described as an LLM-assisted workflow that presents a
-  recommendation for a human to act on, not as an autonomous agent that itself approves or denies
-  anything.
+  Story-Generation Agent, Staff Scheduling Optimizer, Obsidian MCP Agent (renamed from
+  "Note-Organizing MCP Agent"), Insurance Risk Advisor, Analyzing CVM Claims Data to Answer
+  Various KBQ, Twentieth Century Women Across Cultures, and Professional Resume Website (this
+  site), each with a description of what it does. Insurance Risk Advisor MUST be described as an
+  LLM-assisted workflow that presents a recommendation for a human to act on, not as an autonomous
+  agent that itself approves or denies anything.
+- **FR-023**: System MUST link each Project Portfolio entry to its public GitHub repository where
+  one exists (Obsidian MCP Agent, Insurance Risk Advisor, Analyzing CVM Claims Data to Answer
+  Various KBQ, Professional Resume Website); entries with no public repo (Jira Story-Generation
+  Agent, Staff Scheduling Optimizer — proprietary employer work; Twentieth Century Women Across
+  Cultures — a publication, not code) MUST NOT show a placeholder or broken link.
 - **FR-007**: System MUST list, in the Skills section, at minimum the expanded skill set defined
   in resume-website-project-spec-v3.md, including SQL Server, Scrum, Snowflake, Power BI, Tableau,
   BI Analysis, Python, Excel, Staff Training, Business Analytics, Team Management, OpenAI API,
@@ -172,7 +178,7 @@ and confirm a PDF file saves locally; repeat both on a mobile browser.
   Experience, Education, Project Portfolio, Skills, Certifications) with a title and body content.
 - **Experience Entry**: An organization, role/title, time period, and description of outcomes.
 - **Project Entry**: A name and description of what it does; may cross-reference a related
-  Experience Entry.
+  Experience Entry; may include an optional link to its public GitHub repository (FR-023).
 - **Contact Submission**: A visitor-provided name, email, and message sent via the contact form to
   Freddy's inbox through Formspree; not stored by the site itself.
 - **Resume Document**: The single current PDF resume file, viewable in-page and downloadable.
