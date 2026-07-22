@@ -254,14 +254,20 @@ confirmation.
       as the one remaining narrower gap rather than claiming it's fully confirmed. No-JS fallback
       (native `<details>` inline expand) preserved as a graceful degradation path.
 
-### 6. Deployment Pipeline — not started
+### 6. Deployment Pipeline — built and live
 
 - [x] Existing repo's old Pinegrow-generated site files replaced (Phase 1)
 - [x] Reused assets carried over and referenced correctly (Phase 1)
-- [ ] GitHub Pages deploy confirmed working from the updated repo
-- [ ] Custom domain (if applicable) still resolves correctly after the swap
-- Acceptance: a code change pushed to the repo is live within the expected build time, no manual
-  deploy steps, old site fully replaced with no broken links
+- [x] GitHub Pages deploy confirmed working from the updated repo — confirmed classic
+      "deploy from `main` branch" (no Actions workflow, no `gh-pages` branch); pushed 2026-07-21
+      and live within ~10-20 seconds, no manual steps
+- [ ] Custom domain (if applicable) still resolves correctly after the swap — not applicable, no
+      custom domain in use (site is at the default `fblake28.github.io/Professional-Website/`)
+- Acceptance: confirmed live at https://fblake28.github.io/Professional-Website/ — all new assets
+  (`index.html`, `css/styles.css`, `js/main.js`, `assets/images/*`, `assets/resume.pdf`) return
+  `200`; all old Pinegrow-era paths (`pinegrow.json`, `tailwind_theme/tailwind.css`,
+  `_pgbackup/*`) return `404`; live page content confirmed to include the new sections
+  (Certifications, Honors & Awards, etc.) with zero remaining references to "Pinegrow"
 
 ## Build Gates (how compliance actually gets checked)
 

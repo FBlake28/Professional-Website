@@ -269,11 +269,11 @@ for US3).
       performance flags attributable to unnecessary script/asset weight (FR-017, FR-018, SC-007)
 - [X] T028 Audit `index.html`/`css/styles.css`/`js/main.js` for any absolute or local file paths
       and confirm every asset/internal link is relative (constitution Additional Constraints)
-- [ ] T029 Confirm the GitHub Pages deploy mechanism already used by
+- [X] T029 Confirm the GitHub Pages deploy mechanism already used by
       `FBlake28/Professional-Website` (GitHub Actions vs. `main`/`gh-pages` branch) and push a
       commit to verify the new site goes live with no manual step (Feature 6 acceptance,
       resume-website-project-spec-v2.md)
-- [ ] T030 Confirm zero old Pinegrow-era pages/assets remain reachable at the live GitHub Pages URL
+- [X] T030 Confirm zero old Pinegrow-era pages/assets remain reachable at the live GitHub Pages URL
       after deploy — no stale links, no leftover `_pgbackup`/`tailwind_theme` paths (FR-015,
       SC-008)
 - [X] T031 Run the full quickstart.md validation pass end-to-end across all three user stories,
