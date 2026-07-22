@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frederick Blake — Resume</title>
+  <meta name="description" content="Frederick Blake's resume and portfolio site.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#about">Frederick Blake</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#bio">Biography</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <div class="about__layout">
+        <img class="about__photo" src="assets/images/blake-2024-profile-pic.png"
+             alt="Portrait of Frederick Blake" width="640" height="640">
+        <p>
+          Hi, I'm Frederick Blake — a business analyst and former history teacher turned data
+          and AI practitioner. I'm currently pursuing an M.S. in Business Analytics and AI at
+          Stevens Institute of Technology while working as a Business Analyst Intern at Verisk,
+          where I build AI-assisted tools that help teams practice spec-driven development. I
+          care about turning messy processes into clear, data-backed systems — whether that's a
+          Jira workflow, a staffing schedule, or a classroom lesson plan.
+        </p>
+      </div>
+
+      <div class="resume-actions">
+        <details class="resume-viewer">
+          <summary class="button">View Resume</summary>
+          <button type="button" class="resume-viewer__close" aria-label="Close resume preview">&times;</button>
+          <iframe class="resume-viewer__frame" src="assets/resume.pdf"
+                  title="Frederick Blake's resume (PDF)"></iframe>
+        </details>
+        <a class="button button--secondary" href="assets/resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+
+    <section id="bio" aria-labelledby="bio-heading">
+      <h2 id="bio-heading">Professional Biography</h2>
+      <div class="bio__layout">
+        <img class="bio__photo" src="assets/images/teaching.jpg"
+             alt="Frederick Blake teaching a social studies class" width="364" height="232">
+        <div class="bio__text">
+          <p>
+            Frederick began his career in the classroom, teaching history at Fair Lawn Public
+            Schools after graduating Summa Cum Laude from The College of New Jersey with a B.A.
+            in History and Secondary Education. Teaching sharpened skills that carry directly
+            into his current work in business analytics and AI: breaking down complex material
+            for different audiences, managing competing priorities under real time pressure, and
+            using data to figure out what's actually working.
+          </p>
+          <p>
+            That interest in translating complexity into clarity led him to Stevens Institute of
+            Technology, where he is pursuing an M.S. in Business Analytics and AI (expected
+            December 2026). Alongside his coursework, he interns as a Business Analyst at
+            Verisk, where he's optimized a Scrum team's workflow and built a Jira
+            story-generation agent using Claude that helps project owners define user stories
+            faster. He also consults independently for Lightbridge Academy, where he built a
+            staff-scheduling optimizer that predicts classroom attendance with under a 3% failure
+            rate and has reduced staffing costs by more than 3% per center annually.
+          </p>
+          <p>
+            Outside of client work and coursework, Frederick builds personal AI agents — from a
+            note-organizing MCP agent to an insurance risk advisor that pairs a language model
+            with his own trained machine learning models — as a way of keeping his skills sharp
+            and exploring what's possible at the intersection of teaching, analytics, and AI.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <div class="entry-list">
+
+        <article class="entry">
+          <h3 class="entry__title">Business Analyst Intern — Verisk</h3>
+          <p class="entry__meta">June – August 2026</p>
+          <p>
+            Optimized a Scrum team's workflow and built a Jira story-generation agent using
+            Claude that lets project owners quickly define user stories and new features,
+            enabling spec-driven development within the team.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">ML/GenAI Consultant — Lightbridge Academy</h3>
+          <p class="entry__meta">Independent Consulting Engagement</p>
+          <p>
+            Built a staff scheduling optimizer that predicts classroom attendance with under a
+            3% failure rate and reduces staffing costs by 3%+ per center annually (six figures
+            company-wide), while keeping project cost minimal by using pre-paid subscription
+            services the company already had.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">High School History Teacher — Fair Lawn Public School</h3>
+          <p class="entry__meta">Sep. 2024 – Jun. 2025</p>
+          <ul>
+            <li>
+              Designed and delivered professional development focused on leveraging AI in
+              education; trained 70+ educators across two sessions and was re-invited based on
+              program impact.
+            </li>
+            <li>
+              Increased Student Growth Objective (SGO) scores by 783% by designing / implementing
+              targeted instructional interventions.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Assistant Director, Head Counselor, Counselor — Montville Township Parks and Recreation Department</h3>
+          <p class="entry__meta">Summers 2017–2025</p>
+          <ul>
+            <li>
+              Redesigned data collection and reporting workflows, reducing administrative labor
+              hours by more than 100%.
+            </li>
+            <li>
+              Managed daily scheduling and resource allocation for 100+ participants and staff
+              using Excel and Google Workspace, adjusting operations to meet evolving program
+              demands.
+            </li>
+            <li>
+              Led seasonal staff training and streamlined communication between administrative
+              and program teams to improve operational coordination.
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="entry-list">
+
+        <article class="entry">
+          <h3 class="entry__title">M.S. Business Analytics and AI — Stevens Institute of Technology</h3>
+          <p class="entry__meta">Expected December 2026 &middot; GPA: 3.86/4.0</p>
+          <p>Business Intelligence and Analytics Club member.</p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">B.A. History and Secondary Education — The College of New Jersey</h3>
+          <p class="entry__meta">Summa Cum Laude, December 2023 &middot; GPA: 3.95/4.0</p>
+          <p>
+            Member: Kappa Delta Pi (Education Honors Society), Phi Alpha Theta (History Honors
+            Society), Phi Kappa Phi (Multidisciplinary Honors Society).
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Project Portfolio</h2>
+      <div class="entry-list">
+
+        <article class="entry">
+          <h3 class="entry__title">Jira Story-Generation Agent</h3>
+          <p class="entry__meta">Related to: Verisk (see Experience)</p>
+          <p>
+            An AI agent built with Claude that lets project owners quickly define user stories
+            and new features in Jira, enabling spec-driven development within a Scrum team.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Staff Scheduling Optimizer</h3>
+          <p class="entry__meta">Related to: Lightbridge Academy (see Experience)</p>
+          <p>
+            A scheduling tool that predicts classroom attendance with under a 3% failure rate and
+            reduces staffing costs by 3%+ per center annually, built using services the company
+            already had in place to keep project cost minimal.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Note-Organizing MCP Agent</h3>
+          <p>
+            A personal AI agent, built using MCP, that ingests roughly-taken notes and transforms
+            them into organized notes, auto-categorizing into folders and linking to related
+            topics.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Insurance Risk Advisor</h3>
+          <p>
+            An LLM-assisted workflow, not an autonomous agent: a user describes a driver in
+            natural language, the LLM calls a trained ML model (Random Forest or Multiple Linear
+            Regression), the model returns a predicted claim likelihood and premium, and the LLM
+            presents a recommendation for a human to act on. It does not itself approve or deny
+            anything.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Twentieth Century Women Across Cultures</h3>
+          <p class="entry__meta">Published research</p>
+          <p>
+            Research published in <em>Teaching Social Studies</em>, Vol. 23, No. 2, pp. 123–129.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list">
+        <li>SQL Server</li>
+        <li>Scrum</li>
+        <li>Snowflake</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>BI Analysis</li>
+        <li>Python</li>
+        <li>Excel</li>
+        <li>Staff Training</li>
+        <li>Business Analytics</li>
+        <li>Team Management</li>
+        <li>OpenAI API</li>
+        <li>Spec-Driven Development (SDD)</li>
+        <li>Model Context Protocol (MCP)</li>
+        <li>Agentic AI Development</li>
+        <li>LangChain</li>
+        <li>LangGraph</li>
+        <li>Retrieval-Augmented Generation (RAG)</li>
+        <li>Vector Databases (FAISS, ChromaDB)</li>
+        <li>Data Analysis</li>
+        <li>Artificial Intelligence (AI)</li>
+        <li>Technology Integration</li>
+        <li>Statistics</li>
+        <li>Leadership</li>
+        <li>Cross-Team Collaboration</li>
+      </ul>
+    </section>
+
+    <section id="certifications" aria-labelledby="certifications-heading">
+      <h2 id="certifications-heading">Certifications</h2>
+      <div class="cert-cluster-list">
+
+        <div class="cert-cluster">
+          <h3 class="cert-cluster__title">AI &amp; Agentic Systems Development</h3>
+          <ul>
+            <li>Unboxing AI: Visual Studio Code and GitHub Copilot Deep Dive</li>
+            <li>Agentic AI: Build Your First Agentic AI System</li>
+            <li>Model Context Protocol (MCP): Hands-On with Agentic AI</li>
+            <li>Agentic AI Fundamentals: Architectures, Frameworks, and Applications</li>
+            <li>Building AI Agents for Beginners by Microsoft</li>
+            <li>Build Multimodal Generative AI Applications</li>
+            <li>Advanced RAG with Vector Databases and Retrievers</li>
+            <li>Vector Databases for RAG: An Introduction</li>
+            <li>Build RAG Applications: Get Started</li>
+            <li>Develop Generative AI Applications: Get Started</li>
+            <li>Machine Learning Foundations: Calculus</li>
+            <li>Machine Learning Foundations: Linear Algebra</li>
+          </ul>
+        </div>
+
+        <div class="cert-cluster">
+          <h3 class="cert-cluster__title">Business Analytics, Data &amp; Excel</h3>
+          <ul>
+            <li>Google Data Analytics Professional</li>
+            <li>Introduction to SQL</li>
+            <li>Intermediate SQL</li>
+            <li>Coding for Data</li>
+            <li>Python Essential Training</li>
+            <li>Python Intermediate</li>
+            <li>Programming Foundations: Numerical Mathematics and Calculations</li>
+            <li>Complete Guide to Excel Statistics with Copilot</li>
+            <li>Excel: Analytics Tips</li>
+            <li>Excel: Using Solver for Decision Analysis</li>
+            <li>Excel: Dashboards for Beginners</li>
+            <li>Excel Copilot: Working with Formulas and Functions</li>
+            <li>Microsoft Copilot for Excel</li>
+            <li>Agile Business Analysis</li>
+          </ul>
+        </div>
+
+        <div class="cert-cluster">
+          <h3 class="cert-cluster__title">AI-Assisted Productivity &amp; Project Tooling</h3>
+          <ul>
+            <li>Learning Microsoft 365 Copilot for Work</li>
+            <li>Learning Microsoft 365 Copilot Chat (Free Version)</li>
+            <li>Learning Git and GitHub</li>
+            <li>Introduction to Web APIs</li>
+            <li>Agile Project Management with Jira Cloud: 1 Projects, Boards, and Issues</li>
+            <li>Agile Project Management with Jira Cloud: 2 Lean and Agile Processes</li>
+            <li>Spec-Driven Development with GitHub Spec Kit</li>
+          </ul>
+        </div>
+
+        <div class="cert-cluster">
+          <h3 class="cert-cluster__title">Education &amp; Instructional Credentials</h3>
+          <ul>
+            <li>Social Studies Instructional CEAS</li>
+            <li>Google Workspace for Education Fundamentals, Intermediate Level</li>
+            <li>Youth Mental Health First Aid</li>
+            <li>Substitute Teacher – Five Year License</li>
+          </ul>
+        </div>
+
+        <div class="cert-cluster">
+          <h3 class="cert-cluster__title">Other</h3>
+          <ul>
+            <li>Stevens Business + AI Faculty Lecture Series</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Honors &amp; Awards</h2>
+      <div class="entry-list">
+
+        <article class="entry">
+          <h3 class="entry__title">History Department Outstanding Student Teacher Award</h3>
+          <p class="entry__meta">The College of New Jersey &middot; Class of 2023–2024</p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Provost Master's Scholarship</h3>
+          <p class="entry__meta">Stevens Institute of Technology</p>
+          <p>
+            Awarded to exceptional students entering Stevens to pursue a master's degree
+            full-time; a one-time tuition scholarship awarded at admission.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">TCNJ Honors Program Scholarship</h3>
+          <p class="entry__meta">The College of New Jersey</p>
+        </article>
+
+        <article class="entry">
+          <h3 class="entry__title">Dean's List, All 7 Semesters</h3>
+          <p class="entry__meta">The College of New Jersey</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul class="contact-links">
+        <li><a href="https://github.com/FBlake28">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/fblake28">LinkedIn</a></li>
+        <li><a href="mailto:frederick.blake20@gmail.com">frederick.blake20@gmail.com</a></li>
+      </ul>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-field">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" autocomplete="name" required>
+          <p class="form-error" id="contact-name-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" autocomplete="email" required>
+          <p class="form-error" id="contact-email-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+          <p class="form-error" id="contact-message-error"></p>
+        </div>
+
+        <button type="submit" class="button">Send Message</button>
+
+        <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Frederick Blake</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
