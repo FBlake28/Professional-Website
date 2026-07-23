@@ -449,6 +449,11 @@ section h2 {
   margin-bottom: var(--space-2);
 }
 
+.entry__logo--lg {
+  width: 5.25rem;
+  height: 5.25rem;
+}
+
 .entry__title {
   font-size: var(--font-size-lg);
   margin-bottom: var(--space-1);
